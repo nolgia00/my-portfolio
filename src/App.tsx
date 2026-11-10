@@ -1,7 +1,7 @@
 import { Link, Route, Routes, useNavigate } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Code2, Globe, Mail, Menu, Play } from "lucide-react"
 
 import Hero from "./pages/Hero"
