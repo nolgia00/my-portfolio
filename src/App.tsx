@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from "react-router-dom"
+import { Link, Route, Routes, useNavigate } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet"
@@ -20,6 +20,8 @@ const navButtons = [
 ]
 
 export default function App() {
+  let navigate = useNavigate();
+
   return (
     <section className="w-screen h-dvh lg:h-fit bg-blue-950 flex flex-col items-start gap-3">
 
@@ -33,11 +35,9 @@ export default function App() {
         </Link>
         <div className="self-center flex gap-3">
           {navButtons.map((b) => (
-            <Link to={b.link} key={b.text}>
-              <Button variant="link" size="lg" className="text-white/70 hover:text-white text-lg">
-                {b.text}
-              </Button>
-            </Link>
+            <Button key={b.text} variant="link" size="lg" className="text-white/70 hover:text-white text-lg" onClick={() => navigate(b.link)}>
+              {b.text}
+            </Button>
           ))}
         </div>
       </nav>
@@ -59,14 +59,9 @@ export default function App() {
             {/* MIDDLE - Links */}
             <div className="flex flex-col gap-15 mt-20 flex-1 px-2">
               {navButtons.map((b) => (
-                <SheetClose>
-                  <Link to={b.link} key={b.text} className="self-center">
-                    <Button variant="link" size="lg" className="text-5xl px-10 py-10 text-white">
-                      {b.text}
-                    </Button>
-                  </Link>
-
-                </SheetClose>
+                <Button key={b.text} variant="link" size="lg" className="text-5xl px-10 py-10 text-white" onClick={() => navigate(b.link)}>
+                  {b.text}
+                </Button>
               ))}
             </div>
 
@@ -80,26 +75,22 @@ export default function App() {
 
               {/* Socials - PALITAN MO LANG YUNG LINKS DITO */}
               <div className="flex justify-center gap-3">
-                <a href="https://github.com/your-username" target="_blank" rel="noreferrer" className="bg-white/10 hover:bg-green-300 hover:text-[#0A2463] text-white p-3 rounded-full transition">
+                <a href="https://github.com/nolgia00" target="_blank" rel="noreferrer" className="bg-white/10 hover:bg-green-300 hover:text-[#0A2463] text-white p-3 rounded-full transition">
                   <Globe className="w-5 h-5" />
                 </a>
-                <a href="https://youtube.com/@your-username" target="_blank" rel="noreferrer" className="bg-white/10 hover:bg-green-300 hover:text-[#0A2463] text-white p-3 rounded-full transition">
+                <a href="https://youtube.com/@nolgia" target="_blank" rel="noreferrer" className="bg-white/10 hover:bg-green-300 hover:text-[#0A2463] text-white p-3 rounded-full transition">
                   <Play className="w-5 h-5" />
                 </a>
-                <a href="mailto:your-email@gmail.com" className="bg-white/10 hover:bg-green-300 hover:text-[#0A2463] text-white p-3 rounded-full transition">
+                <a href="mailto:jomarescalera05@gmail.com" className="bg-white/10 hover:bg-green-300 hover:text-[#0A2463] text-white p-3 rounded-full transition">
                   <Mail className="w-5 h-5" />
                 </a>
               </div>
 
               {/* Contact Button */}
-              <SheetClose>
-                <Link to="/contacts" className="w-full">
-                  <Button className="w-full h-12 bg-green-300 text-[#0A2463] font-bold text-base hover:bg-green-400">
-                    Contact Me
-                  </Button>
-                </Link>
+              <Button className="w-full h-12 bg-green-300 text-[#0A2463] font-bold text-base hover:bg-green-400" onClick={() => navigate("/contacts")}>
+                Contact Me
+              </Button>
 
-              </SheetClose>
 
               <p className="text-center text-white/30 text-xs">© 2026 Jomar Escalera</p>
             </div>
