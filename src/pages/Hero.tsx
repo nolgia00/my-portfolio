@@ -16,10 +16,10 @@ export default function Hero() {
 						<Dot className="bg-green-300 rounded-full"></Dot>Available for projects</Badge>
 				</div>
 
-				<div className="text-white flex flex-col items-center lg:items-center gap-4 lg:gap-6">
+				<div className="text-white flex flex-col items-center lg:items-start gap-4 lg:gap-6">
 					<div className="flex flex-col items-center lg:items-start gap-10 lg:gap-5">
-						<h1 className="text-5xl sm:text-6xl lg:text-8xl text-green-300">Hi, I'm Jomar</h1>
-						<h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white/90">I build websites and games.</h2>
+						<h1 className="text-center lg:text-left text-5xl sm:text-6xl lg:text-8xl text-green-300">Hi, I'm Jomar</h1>
+						<h2 className="text-center lg:text-left text-2xl sm:text-3xl lg:text-5xl font-bold text-white/90">I build websites and games.</h2>
 						<p className="text-base text-white/60 text-center leading-relaxed px-6 max-w-md">
 							I help small businesses and indie creators turn ideas into playable, working products.
 						</p>
