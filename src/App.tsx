@@ -46,7 +46,7 @@ export default function App() {
       <div className="w-full flex lg:hidden justify-between items-center px-4 py-3">
         <Sheet>
           <SheetTrigger className="p-2">
-            <Menu className="text-white w-15 h-15" />
+            <Menu className="text-white w-5 h-5" />
           </SheetTrigger>
 
           <SheetContent side="left" showCloseButton={false} className="bg-blue-950 flex flex-col p-0 w-[85vw] max-w-[320px]">

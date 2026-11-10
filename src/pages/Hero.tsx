@@ -7,8 +7,8 @@ export default function Hero() {
 	let navigate = useNavigate();
 
 	return (
-		<section className="p-5 lg:p-25 w-full lg:flex-1 flex
-			flex-col-reverse lg:flex-row gap-10 lg:gap-50
+		<section className="p-5 lg:p-10 w-full lg:flex-1 flex
+			flex-col-reverse lg:flex-row gap-6 lg:gap-12
 			items-center">
 			<div className="flex flex-col items-center lg:items-start gap-8 lg:gap-10">
 				<div>
@@ -16,7 +16,7 @@ export default function Hero() {
 						<Dot className="bg-green-300 rounded-full"></Dot>Available for projects</Badge>
 				</div>
 
-				<div className="text-white flex flex-col items-center lg:items-start gap-25 lg:gap-10">
+				<div className="text-white flex flex-col items-center lg:items-start gap-4 lg:gap-6">
 					<div className="flex flex-col items-center lg:items-start gap-10 lg:gap-5">
 						<h1 className="text-8xl text-green-300">Hi, I'm Jomar</h1>
 						<h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white/90">I build websites and games.</h2>
