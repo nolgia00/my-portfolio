@@ -57,9 +57,9 @@ export default function App() {
             </div>
 
             {/* MIDDLE - Links */}
-            <div className="flex flex-col gap-15 mt-20 flex-1 px-2">
+            <div className="flex flex-col gap-3 mt-6 flex-1 px-2">
               {navButtons.map((b) => (
-                <Button key={b.text} variant="link" size="lg" className="text-5xl px-10 py-10 text-white" onClick={() => navigate(b.link)}>
+                <Button key={b.text} variant="link" size="lg" className="text-2xl px-4 py-2 text-white" onClick={() => navigate(b.link)}>
                   {b.text}
                 </Button>
               ))}
