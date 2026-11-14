@@ -45,7 +45,7 @@ export default function About() {
 					<p className="mt-4 text-white/70 leading-relaxed text-base sm:text-lg">
 						I'm a self taught learner from Quezon City who likes building things from scratch.
 						I started with websites and games, but I didn't stop there — I also sing,
-						and produce music.. So when I make a project, I can do
+						and produce music. So when I make a project, I can do
 						the code, the design, and the sound myself.
 					</p>
 
