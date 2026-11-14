@@ -45,8 +45,8 @@ export default function About() {
 					<p className="mt-4 text-white/70 leading-relaxed text-base sm:text-lg">
 						I'm a self taught learner from Quezon City who likes building things from scratch.
 						I started with websites and games, but I didn't stop there — I also sing,
-						produce music, and make digital art. So when I make a project, I can do
-						the code, the design, the sound, and the art myself.
+						and produce music.. So when I make a project, I can do
+						the code, the design, and the sound myself.
 					</p>
 
 					<p className="mt-3 text-white/70 leading-relaxed text-base sm:text-lg">
@@ -61,7 +61,7 @@ export default function About() {
 							<MapPin className="w-4 h-4" /> Quezon City, PH
 						</Badge>
 						<Badge variant="outline" className="text-white/70 border-white/20 text-sm px-3 py-1.5 flex items-center gap-1.5">
-							<GraduationCap className="w-4 h-4" /> Student Creator
+							<GraduationCap className="w-4 h-4" /> Self Roadmap Creator
 						</Badge>
 					</div>
 				</div>
