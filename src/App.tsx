@@ -73,7 +73,6 @@ export default function App() {
                 <span className="text-sm text-white/80">Available for projects</span>
               </div>
 
-              {/* Socials - PALITAN MO LANG YUNG LINKS DITO */}
               <div className="flex justify-center gap-3">
                 <a href="https://github.com/nolgia00" target="_blank" rel="noreferrer" className="bg-white/10 hover:bg-green-300 hover:text-[#0A2463] text-white p-3 rounded-full transition">
                   <Globe className="w-5 h-5" />

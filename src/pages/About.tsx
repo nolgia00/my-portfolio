@@ -12,7 +12,6 @@ import {
 	Globe,
 	Gamepad2,
 	Music,
-	Palette,
 	ArrowRight,
 	Mail,
 } from "lucide-react"
@@ -119,20 +118,6 @@ export default function About() {
 					</CardContent>
 				</Card>
 
-				<Card className="bg-white/5 border-white/10 text-white w-full min-w-0">
-					<CardHeader className="pb-2">
-						<CardTitle className="text-green-300 flex items-center gap-2 text-xl">
-							<Palette className="w-6 h-6 shrink-0" /> Art
-						</CardTitle>
-						<CardDescription className="text-white/60 text-base">
-							Characters & digital art
-						</CardDescription>
-					</CardHeader>
-					<CardContent className="flex flex-wrap gap-2">
-						<Badge variant="secondary" className="text-sm px-2.5 py-1">Ibis Paint</Badge>
-						<Badge variant="secondary" className="text-sm px-2.5 py-1">Character Design</Badge>
-					</CardContent>
-				</Card>
 			</div>
 
 			{/* Bottom CTA - Full width on mobile, big tap targets */}

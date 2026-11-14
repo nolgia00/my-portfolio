@@ -1,9 +1,9 @@
-import { Globe, Gamepad2, Music, Palette, type LucideIcon } from "lucide-react"
+import { Globe, Gamepad2, Music, type LucideIcon } from "lucide-react"
 
 export type Project = {
 	id: string
 	title: string
-	category: "web" | "games" | "music" | "art"
+	category: "web" | "games" | "music"
 	icon: LucideIcon
 	description: string
 	longDescription: string
@@ -73,17 +73,5 @@ export const projects: Project[] = [
 		image: "https://via.placeholder.com/800x400",
 		features: ["Drums by me", "Melody by me", "Mixed in FL Studio"],
 		liveLink: "",
-	},
-	{
-		id: "ibis-character",
-		title: "Anime Character Art",
-		category: "art",
-		icon: Palette,
-		description: "Original character I drew in Ibis Paint from sketch to coloring.",
-		longDescription: "My original character. I sketched it, lined it, colored it, and shaded it all in Ibis Paint on my phone.",
-		tools: ["Ibis Paint", "Digital Art"],
-		image: "https://via.placeholder.com/800x400",
-		features: ["Original character", "Sketch to color", "Done on phone"],
-		liveLink: "",
-	},
+	}
 ]

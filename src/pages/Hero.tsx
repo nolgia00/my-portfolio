@@ -34,7 +34,7 @@ export default function Hero() {
 			</div>
 
 			<div>
-				<img src="jomar_me.jpg" className="w-52 h-52 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full object-cover brightness-95 saturate-100 ring-2 ring-green-300" />
+				<img src="casual_me.webp" className="w-52 h-52 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full object-cover brightness-95 saturate-100 ring-2 ring-green-300" />
 			</div>
 		</section>
 	)

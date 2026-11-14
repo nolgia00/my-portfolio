@@ -7,7 +7,6 @@ import {
 	Globe,
 	Gamepad2,
 	Music,
-	Palette,
 	LayoutGrid,
 	ArrowRight,
 	FolderOpen,
@@ -30,7 +29,7 @@ export default function ProjectsPage() {
 				My <span className="text-green-300">Projects</span>
 			</h2>
 			<p className="text-white/60 mt-2 text-base sm:text-lg">
-				Everything I built — Web, Games, Music & Art. Filter it like a pro.
+				Everything I built — Web, Games, & Music. Filter it like a pro.
 			</p>
 
 			{/* BIG TABS - h-11, text-base, easy to tap */}
@@ -47,9 +46,6 @@ export default function ProjectsPage() {
 					</TabsTrigger>
 					<TabsTrigger value="music" className="whitespace-nowrap flex-1 sm:flex-none h-11 text-base px-4 gap-2">
 						<Music className="w-5 h-5" /> Music
-					</TabsTrigger>
-					<TabsTrigger value="art" className="whitespace-nowrap flex-1 sm:flex-none h-11 text-base px-4 gap-2">
-						<Palette className="w-5 h-5" /> Art
 					</TabsTrigger>
 				</TabsList>
 			</Tabs>

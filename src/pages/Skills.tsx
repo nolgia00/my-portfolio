@@ -6,13 +6,12 @@ import {
 	Globe,
 	Gamepad2,
 	Music,
-	Palette,
 	Sparkles,
 	type LucideIcon,
 } from "lucide-react"
 
 type SkillGroup = {
-	category: "web" | "games" | "music" | "art"
+	category: "web" | "games" | "music"
 	title: string
 	description: string
 	icon: LucideIcon
@@ -62,18 +61,6 @@ const skills: SkillGroup[] = [
 		],
 		tools: ["FL Studio", "Vocals", "Beats", "Mixing"],
 	},
-	{
-		category: "art",
-		title: "Digital Art",
-		description: "Characters & art for my projects",
-		icon: Palette,
-		items: [
-			{ name: "Ibis Paint", level: 80, note: "Character art, coloring" },
-			{ name: "Character Design", level: 70, note: "From sketch to final" },
-			{ name: "UI Design", level: 65, note: "Designing my own portfolio" },
-		],
-		tools: ["Ibis Paint", "Character Design", "Coloring"],
-	},
 ]
 
 export default function Skills() {
@@ -90,7 +77,7 @@ export default function Skills() {
 			{/* SAME AS PROJECTS: Tabs on top, content BELOW - flex-col forces it */}
 			<Tabs defaultValue="web" className="mt-6 w-full flex flex-col">
 				{/* SHRUNK TABS */}
-				<TabsList className="bg-white/5 border border-white/10 w-full grid grid-cols-4 h-10 p-1 gap-1 shrink-0">
+				<TabsList className="bg-white/5 border border-white/10 w-full grid grid-cols-3 h-10 p-1 gap-1 shrink-0">
 					<TabsTrigger value="web" className="whitespace-nowrap h-8 text-sm px-1 gap-1.5">
 						<Globe className="w-4 h-4" /> Web
 					</TabsTrigger>
@@ -99,9 +86,6 @@ export default function Skills() {
 					</TabsTrigger>
 					<TabsTrigger value="music" className="whitespace-nowrap h-8 text-sm px-1 gap-1.5">
 						<Music className="w-4 h-4" /> Music
-					</TabsTrigger>
-					<TabsTrigger value="art" className="whitespace-nowrap h-8 text-sm px-1 gap-1.5">
-						<Palette className="w-4 h-4" /> Art
 					</TabsTrigger>
 				</TabsList>
 
